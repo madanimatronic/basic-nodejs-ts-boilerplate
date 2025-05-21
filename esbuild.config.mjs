@@ -5,8 +5,8 @@ esbuild
     entryPoints: ['src/index.ts'],
     bundle: true,
     platform: 'node',
-    format: 'esm',
     outfile: 'dist/index.js',
+    format: 'cjs',
     // minify: true,
   })
   .catch(() => process.exit(1));

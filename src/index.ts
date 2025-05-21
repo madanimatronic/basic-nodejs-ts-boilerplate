@@ -1,14 +1,7 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { bong } from './cloud.js';
-import { anbc } from './game/test.js';
-// Импорты с расширениями используются в чистом ESM!
+import os from 'node:os';
+import { bong } from './cloud';
+import { anbc } from './game/test';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-console.log(__dirname, 12345, anbc);
+console.log(__filename, __dirname, 'Hello!', 10 + 12, os.arch());
 bong();
-
-// const abc: number = 'Error yee yee';
-// console.log(abc);
+console.log('We also have a nice anbc here:', anbc);

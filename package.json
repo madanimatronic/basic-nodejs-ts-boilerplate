@@ -1,11 +1,10 @@
 {
-  "name": "nodejs-ts-boilerplate-esm",
+  "name": "basic-nodejs-ts-boilerplate",
   "private": true,
-  "type": "module",
   "version": "1.0.0",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "node esbuild.config.js",
+    "build": "node esbuild.config.mjs",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint",
